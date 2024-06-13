@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #181e24;
+
+}
+
+/* ==============================Loader=============================== */
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  background-color: #181e24;
+  display: grid;
+  place-content: center;
+}
+.loaderCircle {
+  height: 60px;
+  width: 60px;
+  background: conic-gradient(white, rgb(77, 77, 77));
+  border-radius: 50%;
+  position: relative;
+  animation: loading 1s linear infinite;
+}
+.loaderCircle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #181e24;
+  margin: 10px;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* ==============================hero section=============================== */
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 600px;
+  overflow: hidden;
+}
+.childone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  z-index: 1;
+}
+.black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  z-index: 2;
+  color: white;
+  height: 600px;
+  width: 100%;
+  opacity: 50%;
+}
+.mainTexting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: black; */
+  height: 100vh;
+  z-index: 3;
+  color: white;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* font-size: 50px; */
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+#bgVideo {
+  width: 100%;
+}
+.laptopBox {
+  /* background-color: green; */
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 225px;
+  width: 380px;
+  /* background-color: cyan; */
+}
+.laptop {
+  width: 400px;
+  position: absolute;
+  top: -9px;
+  left: -33px;
+  z-index: 2;
+}
+.typing {
+  width: 282px;
+  height: 193px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  z-index: 1;
+  overflow: hidden !important;
+}
+.typVid {
+  width: 100%;
+}
+
+/* ==============================animation=============================== */
+
+.taglist > p {
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.216);
+}
+.mainWrapper {
+  display: grid;
+  place-items: center;
+}
+.minWrapper {
+  /*important */
+  overflow: hidden;
+  max-width: 1000px;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+.Scroller {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  /* border : 2px solid red; */
+}
+.rev {
+  animation-direction: reverse;
+}
+.taglist {
+  display: flex;
+  /* width : 90vw; */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+/* ----------------- */
+
+@media (max-width: 430px) {
+  .minWrapper {
+    max-width: 400px;
+  }
+}
+
+/* ================================Our Community line================================ */
+
+.line {
+  width: 1px;
+  height: 80px;
+  background-color: white;
+  opacity: 50%;
+}
+
+/* ================================Core Offering Image================================ */
+
+.iconImage {
+  filter: invert(95%);
+}
+/* ================================Top Companies Animation================================ */
+
+.compImage {
+  width: 130px;
+  display: block;
+  margin: 20px;
+}
+
+.topCompaniesDivWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* .mainContainer{
+  border: 2px solid red;
+}
+
+.mainContainer{
+  border: 2px solid green;
+}
+
+.SliderWrapperTopComp{
+  border: 2px solid black;
+} */
+
+.SliderWrapperTopComp {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  /* animation-direction: alternate-reverse; */
+}
+
+.taglistTopComp {
+  /* border: 2px solid brown; */
+  display: flex;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+/* 
+.topCompaniesDivWrapper{
+  border: 4px solid lime;
+}
+
+.compImage{
+  border : 2px solid brown;
+}
+*/
+
+/* ================================Testimonials================================ */
+.mainTestimonialsSliderWrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Optionally, you can add styles to the track if needed */
+.mainTestimonialsSliderWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ================================Testimonials================================ */
+
+.blackToWhite {
+  filter: invert(95%);
+}
+
+.slick-slide > div {
+  margin: 15px;
+  /* width: 400px; */
+}
+
+.slick-slider {
+  width: 90%;
+  left: 66px;
+}
+
+/* .TestimonialsShadow{
+  mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+} */
+
+/* ================================Sign Up================================ */
+
+.imageInput > input[type="file"] {
+  display: none;
+}
+
+/* ============================================================================== */
+/* ============================================================================== */
+/* Responsive Design */
+/* ============================================================================== */
+/* ============================================================================== */
+
+@media (max-width: 430px) {
+  * {
+    text-align: center;
+  }
+  /* ================================ header ================================ */
+  #hamburgerIcon {
+    content: "";
+    display: inline-block;
+    background-image: url("/images/icons/hamburger.png");
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 4px;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  }
+
+  /* ==============================hero section=============================== */
+  
+  .parent {
+    min-height: 70vh;
+    background-color: #181e24;
+  }
+
+  .laptop {
+    top: -9px;
+    left: 0px;
+  }
+
+  .typing {
+    left: 50px;
+  }
+  /* ==============================hero section=============================== */
+ 
+}
+
+
+@media (max-width:1100px) {
+  #bgVideo, .black{
+    display : none;
+  }
+}
