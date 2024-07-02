@@ -75,7 +75,7 @@ const AllCourses = () => {
           </div>
         </div>
         <div>
-          <div className="p-10 flex flex-wrap gap-4">
+          <div className="p-10 flex flex-wrap justify-center gap-10">
             {courses?.map((c, i) => {
               return (
                 <SingleCourse

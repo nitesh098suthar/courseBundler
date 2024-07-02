@@ -208,26 +208,12 @@ body{
   flex-direction: row;
 }
 
-/* .mainContainer{
-  border: 2px solid red;
-}
-
-.mainContainer{
-  border: 2px solid green;
-}
-
-.SliderWrapperTopComp{
-  border: 2px solid black;
-} */
-
 .SliderWrapperTopComp {
   display: flex;
   animation: scroll 30s linear infinite;
-  /* animation-direction: alternate-reverse; */
 }
 
 .taglistTopComp {
-  /* border: 2px solid brown; */
   display: flex;
   align-items: center;
 }
@@ -240,15 +226,6 @@ body{
     transform: translate(-100%);
   }
 }
-/* 
-.topCompaniesDivWrapper{
-  border: 4px solid lime;
-}
-
-.compImage{
-  border : 2px solid brown;
-}
-*/
 
 /* ================================Testimonials================================ */
 .mainTestimonialsSliderWrapper::-webkit-scrollbar {

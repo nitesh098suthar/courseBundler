@@ -11,7 +11,6 @@ const courseSlice = createSlice({
     allCoursesSuccess: (state, action) => {
       state.courses = action.payload.allCourses;
     },
-
     getCourseLecturesSuccess: (state, action) => {
       state.lectures = action.payload.lectures;
     },
